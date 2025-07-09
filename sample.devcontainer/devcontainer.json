@@ -1,0 +1,13 @@
+{
+  "name": "Gemini CLI DevContainer",
+  "image": "gemini-cli-dev",
+  "workspaceFolder": "/workspace",
+  "mounts": [
+    "source=${localWorkspaceFolder},target=/workspace,type=bind",
+    "source=${localEnv:USERPROFILE}\\.gemini,target=/home/node/.gemini,type=bind",
+    "source=${localEnv:USERPROFILE}\\.gitconfig,target=/home/node/.gitconfig,type=bind"
+  ],
+  "settings": {},
+  "extensions": [],
+  "postCreateCommand": ""
+} 
